@@ -12,7 +12,7 @@ def tela2():
 def cadastro():
     print(CampoUsuario.get().strip())
     print(CampoSenha.get().strip())
-    CampoUsuario.delete(0, 'end') # Comando pra apagar os dados depois de executado;
+    CampoUsuario.delete(0, 'end')
     CampoSenha.delete(0, 'end')
 
 # Comando para os Campo de Usuário/Senha
