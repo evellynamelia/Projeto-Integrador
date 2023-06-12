@@ -2,18 +2,22 @@ from tkinter import *
 import tkinter.messagebox as MessageBox
 from PIL import Image, ImageTk, ImageFont, ImageDraw
 
-# Comando para direcionar a Tela2, depois de apertar o botão "  Iniciar  ";
+# Comando para direcionar a Tela2 - Cadastro, depois de apertar o botão "  Iniciar  ";
 def tela2():
     Tela2.place_forget()
     Tela2.place(width=370, height=620)
     Botao.place_forget()
 
-# Comando para receber os dados de Campo de Usuário/Senha;
+# Comando para receber os dados de Campo de Usuário/Senha + Direcionamento a Tela3 - Menu;
 def cadastro():
     print(CampoUsuario.get().strip())
     print(CampoSenha.get().strip())
     CampoUsuario.delete(0, 'end')
     CampoSenha.delete(0, 'end')
+    
+    Tela3.place_forget()
+    Tela3.place(width=370, height=620)
+    BotaoCadastro.place_forget
 
 # Comando para os Campo de Usuário/Senha;
 def set_transparent_entry_style(entry):
@@ -50,7 +54,7 @@ Fundo2 = Fundo2.resize((370, 620))
 Fundo2Tk = ImageTk.PhotoImage(Fundo2)
 label_fundo = Label(Tela2, image=Fundo2Tk)
 
-# Dimensões da Tela;
+# Dimensões da Tela2;
 LarguraTela2 = 370
 AlturaTela2 = 620
 
@@ -79,5 +83,24 @@ CampoSenha.place(x=125, y=300)
 # Botão Tela Cadastro/ Botton Cadastrar;
 BotaoCadastro = Button(Tela2, text="  Cadastrar ", bg="#d7d6ea", fg="#57d543", font=("Arial Black", 11), command= cadastro)
 BotaoCadastro.place(x=130, y=400)
+
+# Criação da Tela 3 - Menu
+Tela3 = Frame(Tela2)
+Fundo3 = Image.open("C:\\Users\\evell\\OneDrive\\Documentos\\CURSO DS (ETE)\\Visual Code Projetos\\PyThon\\Projeto PI\\Imagens\\SoUn Menu.png")
+Fundo3 = Fundo3.resize((370, 620))
+Fundo3Tk = ImageTk.PhotoImage(Fundo3)
+label_fundo = Label(Tela3, image=Fundo3Tk)
+
+# Dimensões da Tela3;
+LarguraTela3 = 370
+AlturaTela3 = 620
+
+# Calcular as coordenadas;
+x = (LarguraTela3 - Fundo3.width) // 2
+y = (AlturaTela3 - Fundo3.height) // 2
+
+# Rótulo com a imagem;
+label_fundo = Label(Tela3, image=Fundo3Tk)
+label_fundo.place(x=x, y=y)
 
 Tela.mainloop()
