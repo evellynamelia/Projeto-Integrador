@@ -14,7 +14,8 @@ def cadastro():
     print(CampoSenha.get().strip())
     CampoUsuario.delete(0, 'end')
     CampoSenha.delete(0, 'end')
-    
+
+    # Comando para direcionar a Tela3- Menu
     Tela3.place_forget()
     Tela3.place(width=370, height=620)
     BotaoCadastro.place_forget
