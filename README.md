@@ -30,17 +30,18 @@ Agradeço pelo interesse neste projeto e estou comprometida em desenvolver um ap
 
 # Fotos Atualizadas:
 
-<li>Tela Principal: Início</li>
+<li>Tela Principal: Início</li><br>
 <p align="center">
   <img src="https://github.com/evellynamelia/Projeto-Integrador/assets/128506800/71f8faa0-0998-4788-bb96-1ce26cf57e8e" alt="Tela Principal" width="370" height="620">
 </p>
-
-<li>Tela Secundaria: Cadastro</li>
+</br>
+<li>Tela Secundaria: Cadastro</li><br>
 <p align="center">
   <img src="https://github.com/evellynamelia/Projeto-Integrador/assets/128506800/fe537812-2c7b-4575-9490-bcf1db3a0569" alt="Tela de Cadastro" width="370" height="620">
 </p>
-
-<li>Tela Terciaria: Menu</li>
+</br>
+<li>Tela Terciaria: Menu</li><br>
 <p align="center">
   <img src="https://github.com/evellynamelia/Projeto-Integrador/assets/128506800/8553f943-68bc-4f7d-bafb-f4887e3e434c" alt="Tela de Menu" width="370" height="620">
 </p>
+</br>
